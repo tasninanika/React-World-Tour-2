@@ -27,11 +27,9 @@ const Country = ({country, handleVisitedCountry}) => {
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Going'}</button>
             {visited ? 'I have visited this country.': 'I want to visit'}
             <hr />
-            <CountryDetail>
-                country={country}
-                handleVisitedCountry={handleVisitedCountry}
-                handleVisited={handleVisited}
-
+            <CountryDetail
+            country={country}
+            handleVisitedCountry={handleVisitedCountry}>
             </CountryDetail>
         </div>
     );
