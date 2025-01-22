@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Country from "../Country/country";
+import './Countries.css';
 
 const Countries = () => {
     const[countries, setCountries] = useState([]);
