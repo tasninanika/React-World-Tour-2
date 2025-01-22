@@ -7,7 +7,9 @@ const Country = ({country}) => {
             <h3>Name: {name?.common}</h3>
             <img src={flags?.png} alt="" />
             <p>Region: {country?.region}</p>
+            <p>Code: {country?.cca2}</p>
             <p>Population: {country?.population}</p>
+            
         </div>
     );
 };
