@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import Country from './components/Country/Country'
 
-const countries = () => {
+const Countries = () => {
     const[countries, setCountries] = useState([]);
 
     useEffect(()=>{
         fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
         .then(data => setCountries(data));
-    })
+    },[]);
     
     
     return (
@@ -15,10 +16,10 @@ const countries = () => {
             <h3>Countries:{countries.length}</h3>
             {
                 countries.map(country => 
-                <Country></Country>)
-            }
+                    <Country></Country>
+            )}
         </div>
     );
 };
 
-export default countries;
+export default Countries;
