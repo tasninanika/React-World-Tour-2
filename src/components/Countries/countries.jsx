@@ -13,8 +13,10 @@ const Countries = () => {
     },[]);
 
     const handleVisitedCountry = (country) =>{
-        // console.log(country);
+        console.log(country);
         console.log('add this');
+        const newVisitedCountries = [...visitedCountries, country];
+        setVisitedCountries(newVisitedCountries);
     }
     
     
@@ -22,7 +24,7 @@ const Countries = () => {
         <div>
             <h3>Countries:{countries.length}</h3>
             <div>
-                <h5>Visited Countries</h5>
+                <h5>Visited Countries: {visitedCountries.length}</h5>
                 <ul>
                     
                 </ul>
