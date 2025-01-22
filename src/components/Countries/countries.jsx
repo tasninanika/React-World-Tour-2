@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const countries = () => {
     const[countries, setCountries] = useState([]);
@@ -8,7 +7,8 @@ const countries = () => {
         fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
         .then(data => console.log(data));
-    }, [])
+    })
+    
     
     return (
         <div>
