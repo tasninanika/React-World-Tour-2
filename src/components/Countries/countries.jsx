@@ -13,6 +13,10 @@ const countries = () => {
     return (
         <div>
             <h3>Countries:{countries.length}</h3>
+            {
+                countries.map(country => 
+                <Country></Country>)
+            }
         </div>
     );
 };
