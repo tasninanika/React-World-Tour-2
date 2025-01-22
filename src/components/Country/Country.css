@@ -4,3 +4,11 @@
     padding: 5px;
     border-radius: 15px;
 }
+
+.visited{
+    background-color: bisque;
+}
+
+.non-visited{
+    background-color: burlywood;
+}
