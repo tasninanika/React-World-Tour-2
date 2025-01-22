@@ -15,9 +15,9 @@ const Countries = () => {
         <div>
             <h3>Countries:{countries.length}</h3>
             {
-                countries.map(country =>{
+                countries.map(country =>
                     <Country></Country>
-                })
+                )
             }
             
         </div>
