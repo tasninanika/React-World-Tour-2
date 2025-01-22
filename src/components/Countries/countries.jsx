@@ -16,7 +16,7 @@ const Countries = () => {
             <h3>Countries:{countries.length}</h3>
             {
                 countries.map(country =>
-                    <Country country={country}></Country>
+                    <Country key={country.cca3} country={country}></Country>
                 )
             }
             
