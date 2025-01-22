@@ -1,4 +1,4 @@
-const country = ({country}) => {
+const Country = ({country}) => {
     console.log(country);
     return (
         <div>
@@ -7,4 +7,4 @@ const country = ({country}) => {
     );
 };
 
-export default country;
+export default Country;
