@@ -16,7 +16,7 @@ const Countries = () => {
             <h3>Countries:{countries.length}</h3>
             {
                 countries.map(country =>
-                    <Country></Country>
+                    <Country country={country}></Country>
                 )
             }
             
