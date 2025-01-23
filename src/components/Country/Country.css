@@ -12,3 +12,12 @@
 .non-visited{
     background-color: burlywood;
 }
+
+.btn-1{
+    margin-bottom: 10px;
+}
+
+.btn-2{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
