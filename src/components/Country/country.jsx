@@ -18,7 +18,7 @@ const Country = ({country, handleVisitedCountry}) => {
     return (
         <div className={`country ${visited ? 'visited' : 'non-visited'}`}>
             <h3>Name: {name?.common}</h3>
-            <img src={flags?.png} alt="" />
+            <img src={flags?.png} alt="" className='img'/>
             <p>Region: {country?.region}</p>
             <p>Code: {country?.cca2}</p>
             <p>Population: {country?.population}</p>
